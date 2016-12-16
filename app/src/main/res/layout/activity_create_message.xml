@@ -10,8 +10,30 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.kajan.messenger.CreateMessageActivity">
 
-    <TextView
+
+    <Button
+        android:text="@string/send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="23dp"
+        android:id="@+id/send"
+        android:onClick="onSendMessage" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:layout_below="@+id/send"
+        android:layout_alignLeft="@+id/send"
+        android:layout_alignStart="@+id/send"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"/>
 </RelativeLayout>
