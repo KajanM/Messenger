@@ -21,7 +21,6 @@ public class CreateMessageActivity extends AppCompatActivity {
         String messageText = messageView.getText().toString();
 
         Intent intent = new Intent(this, ReceiveMessageActivity.class);
-        startActivity(intent);
         intent.putExtra("message", messageText );
         startActivity(intent);
 
