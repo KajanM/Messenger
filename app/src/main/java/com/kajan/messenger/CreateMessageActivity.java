@@ -23,6 +23,7 @@ public class CreateMessageActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ReceiveMessageActivity.class);
         startActivity(intent);
         intent.putExtra("message", messageText );
+        startActivity(intent);
 
     }
 }
