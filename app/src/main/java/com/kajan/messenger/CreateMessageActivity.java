@@ -20,9 +20,14 @@ public class CreateMessageActivity extends AppCompatActivity {
         EditText messageView = (EditText) findViewById(R.id.message);
         String messageText = messageView.getText().toString();
 
-        Intent intent = new Intent(this, ReceiveMessageActivity.class);
-        intent.putExtra("message", messageText );
-        startActivity(intent);
+//        Intent intent = new Intent(this, ReceiveMessageActivity.class);
+//        intent.putExtra("message", messageText );
+//        startActivity(intent);
+
+        Intent intent2 = new Intent(Intent.ACTION_SEND);
+        intent2.setType("text/plain");
+        intent2.putExtra(Intent.EXTRA_TEXT, messageText);
+        startActivity(intent2);
 
     }
 }
